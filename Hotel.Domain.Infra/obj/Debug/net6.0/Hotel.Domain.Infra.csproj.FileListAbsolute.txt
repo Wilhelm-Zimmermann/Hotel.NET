@@ -1,0 +1,15 @@
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.csproj.AssemblyReference.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.AssemblyInfoInputs.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.AssemblyInfo.cs
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.csproj.CoreCompileInputs.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Infra.deps.json
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Infra.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Infra.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.csproj.CopyComplete
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\refint\Hotel.Domain.Infra.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\ref\Hotel.Domain.Infra.dll

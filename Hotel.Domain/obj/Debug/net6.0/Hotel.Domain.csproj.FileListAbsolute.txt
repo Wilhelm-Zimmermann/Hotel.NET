@@ -1,0 +1,12 @@
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.csproj.AssemblyReference.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.AssemblyInfoInputs.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.AssemblyInfo.cs
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.csproj.CoreCompileInputs.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain\bin\Debug\net6.0\Hotel.Domain.deps.json
+C:\projetos\portfolio\Hotel\Hotel.Domain\bin\Debug\net6.0\Hotel.Domain.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain\bin\Debug\net6.0\Hotel.Domain.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\refint\Hotel.Domain.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\ref\Hotel.Domain.dll

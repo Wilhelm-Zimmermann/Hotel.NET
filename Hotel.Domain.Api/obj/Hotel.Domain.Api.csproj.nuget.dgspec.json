@@ -1,0 +1,201 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj",
+        "projectName": "Hotel.Domain.Api",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj"
+              },
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj",
+        "projectName": "Hotel.Domain.Infra",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj",
+        "projectName": "Hotel.Domain",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
