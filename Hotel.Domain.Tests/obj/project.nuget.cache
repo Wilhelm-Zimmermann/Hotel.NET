@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Kas7GQtC1L6tFyGMv1Q0UghMxVEnyxhW49GyULuO7+PxwY4G8yOnKywZK79VxFJG1qqUyFAruSPi5RQPZ8lKA==",
+  "dgSpecHash": "HdyMsz+Q+9wSVI2C4rxCDT8xsiQiBwmEON43WKR7ZnfCmBDGSfojBlUAYi2VG0d3sbuoHTyJRPyqkx7aQMz34w==",
   "success": true,
   "projectFilePath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Tests\\Hotel.Domain.Tests.csproj",
   "expectedPackageFiles": [

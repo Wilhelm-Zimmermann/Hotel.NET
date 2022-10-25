@@ -21,6 +21,12 @@ namespace Hotel.Domain.Infra.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task UpdateToken(Token token)
+        {
+            _context.Entry(token).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<Token>> GetAllTokens()
         {
             return await _context.Tokens.ToListAsync();
