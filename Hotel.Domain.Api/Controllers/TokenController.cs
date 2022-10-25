@@ -33,5 +33,16 @@ namespace Hotel.Domain.Api.Controller
         {
             return await repository.GetTokenById(id);
         }
+
+
+        [HttpPut]
+        [Route("udpate/{id}")]
+        public async Task<GenericCommandResult> UpdateToken([FromBody] UpdateTokenCommand command, [FromServices] TokenHandler handler, Guid id)
+        {
+            command.Id = id;
+            var result = await handler.Handle(command);
+
+            return (GenericCommandResult)result;
+        }
     }
 }
