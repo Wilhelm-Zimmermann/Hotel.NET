@@ -5,7 +5,7 @@ namespace Hotel.Domain.Infra.Contexts
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<Token> Tokens { get; set; }
+        public DbSet<HotelGuest> HotelGuests { get; set; }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {

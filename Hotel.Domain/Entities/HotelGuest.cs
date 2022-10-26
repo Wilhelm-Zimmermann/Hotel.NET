@@ -1,6 +1,6 @@
 namespace Hotel.Domain.Entities
 {
-    public class Token : Base
+    public class HotelGuest : Base
     {
         public string Name { get; private set; }
         public string Om { get; private set; }
@@ -8,12 +8,12 @@ namespace Hotel.Domain.Entities
         public string PhoneNumber { get; private set; }
         public string Email { get; private set; }
 
-        public Token()
+        public HotelGuest()
         {
             
         }
 
-        public Token(string name, string om, DateTime birthDate, string phoneNumber, string email)
+        public HotelGuest(string name, string om, DateTime birthDate, string phoneNumber, string email)
         {
             Name = name;
             Om = om;
