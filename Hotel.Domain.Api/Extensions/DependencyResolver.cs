@@ -1,8 +1,8 @@
 using Hotel.Domain.Handlers;
-using Microsoft.EntityFrameworkCore;
 using Hotel.Domain.Infra.Contexts;
 using Hotel.Domain.Repositories.Contracts;
 using Hotel.Domain.Infra.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Hotel.Domain.Api.Extensions
 {
@@ -10,7 +10,13 @@ namespace Hotel.Domain.Api.Extensions
     {
         public static void Resolve(this WebApplicationBuilder builder)
         {
-            builder.Services.AddDbContext<DatabaseContext>(opt => opt.UseInMemoryDatabase("Database"));
+            var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase");
+
+            builder.Services.AddDbContext<DatabaseContext>(options =>
+            {
+                options.UseNpgsql(connectionString);
+            });
+
             builder.Services.AddScoped<IHotelGuestsRepository, HotelGuestsRepository>();
             builder.Services.AddScoped<HotelGuestHandler, HotelGuestHandler>();
         }
