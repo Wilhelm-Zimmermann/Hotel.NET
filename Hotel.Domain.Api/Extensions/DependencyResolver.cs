@@ -18,6 +18,8 @@ namespace Hotel.Domain.Api.Extensions
             });
 
             builder.Services.AddScoped<IHotelGuestsRepository, HotelGuestsRepository>();
+            builder.Services.AddScoped<IEscortsRepository, EscortsRepository>();
+            builder.Services.AddScoped<EscortHandler, EscortHandler>();
             builder.Services.AddScoped<HotelGuestHandler, HotelGuestHandler>();
         }
     }

@@ -7,6 +7,7 @@ namespace Hotel.Domain.Entities
         public DateTime BirthDate { get; private set; }
         public string PhoneNumber { get; private set; }
         public string Email { get; private set; }
+        public ICollection<Escort>? Escorts { get; private set; }
 
         public HotelGuest()
         {
@@ -45,6 +46,11 @@ namespace Hotel.Domain.Entities
         public void UpdateEmail(string email)
         {
             Email = email;
+        }
+
+        public void AddEscort(Escort escort)
+        {
+            Escorts.Add(escort);
         }
     }
 }
