@@ -1,6 +1,8 @@
 ﻿using Hotel.Domain.Commands;
+using Hotel.Domain.Entities;
 using Hotel.Domain.Handlers;
 using Hotel.Domain.Repositories.Contracts;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel.Domain.Api.Controllers
@@ -18,6 +20,24 @@ namespace Hotel.Domain.Api.Controllers
 
 
             return (GenericCommandResult) result;
+        }
+
+        [HttpGet]
+        [Route("all")]
+        public async Task<IEnumerable<Escort>> GetAllEscorts([FromServices] IEscortsRepository repository)
+        {
+            var result = await repository.GetAllEscorts();
+
+            return result;
+        }
+
+        [HttpGet]
+        [Route("all/{hotelGuestId}")]
+        public async Task<IEnumerable<Escort>> GetAllEscortsByHotelGuestsId([FromServices] IEscortsRepository repository, Guid hotelGuestId)
+        {
+            var result = await repository.GetEsortsByHotelGuestId(hotelGuestId);
+
+            return result;
         }
     }
 }

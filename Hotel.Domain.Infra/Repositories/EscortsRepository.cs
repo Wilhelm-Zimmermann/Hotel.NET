@@ -3,11 +3,6 @@ using Hotel.Domain.Infra.Contexts;
 using Hotel.Domain.Queries;
 using Hotel.Domain.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hotel.Domain.Infra.Repositories
 {
@@ -23,6 +18,33 @@ namespace Hotel.Domain.Infra.Repositories
         public async Task CreateEscort(Escort escort)
         {
             _context.Escorts.Add(escort);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteEscort(Escort escort)
+        {
+            _context.Escorts.Remove(escort);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Escort>> GetAllEscorts()
+        {
+            return await _context.Escorts.ToListAsync();
+        }
+
+        public async Task<Escort> GetEscortById(Guid id)
+        {
+            return await _context.Escorts.FirstOrDefaultAsync(EscortQueries.GetEscortById(id));
+        }
+
+        public async Task<IEnumerable<Escort>> GetEsortsByHotelGuestId(Guid hotelGuestId)
+        {
+            return await _context.Escorts.Where(e => e.HotelGuestId == hotelGuestId).ToListAsync();
+        }
+
+        public async Task UpdateEscort(Escort escort)
+        {
+            _context.Entry(escort).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
     }
