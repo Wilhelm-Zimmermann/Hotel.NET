@@ -19,17 +19,17 @@ namespace Hotel.Domain.Entities
             HotelGuestId = hotelGuestId;
         }
 
-        public void SetName(string name)
+        public void UpdateName(string name)
         {
             Name = name;
         }
 
-        public void SetRelationship(string relationship)
+        public void UpdateRelationship(string relationship)
         {
             Relationship = relationship;
         }
 
-        public void SetBirthDate(DateTime birthDate)
+        public void UpdateBirthDate(DateTime birthDate)
         {
             BirthDate = birthDate;
         }

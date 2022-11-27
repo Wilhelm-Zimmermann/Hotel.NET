@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Hotel.Domain.Handlers
 {
-    public class EscortHandler : IHandler<CreateEscortCommand>
+    public class EscortHandler : IHandler<CreateEscortCommand>, IHandler<UpdateEscortCommand>
     {
         private readonly IEscortsRepository _repository;
 
@@ -23,6 +23,19 @@ namespace Hotel.Domain.Handlers
             await _repository.CreateEscort(escort);
 
             return new GenericCommandResult("Escort was created", true, escort);
+        }
+
+        public async Task<ICommandResult> Handle(UpdateEscortCommand command)
+        {
+            var escort = await _repository.GetEscortById(command.Id);
+
+            escort.UpdateName(command.Name);
+            escort.UpdateBirthDate(command.BirthDate);
+            escort.UpdateRelationship(command.Relationship);
+
+            await _repository.UpdateEscort(escort);
+
+            return new GenericCommandResult("Updated successfully", true, escort);
         }
     }
 }
