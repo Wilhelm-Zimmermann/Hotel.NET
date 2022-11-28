@@ -39,6 +39,12 @@ namespace Hotel.Domain.Handlers
             escort.UpdateBirthDate(command.BirthDate);
             escort.UpdateRelationship(command.Relationship);
 
+            var escortValidator = new EscortValidator(escort);
+            escortValidator.Validate();
+
+            if (!escortValidator.IsValid)
+                return new GenericCommandResult("Some Field might be invalid", false, null);
+
             await _repository.UpdateEscort(escort);
 
             return new GenericCommandResult("Updated successfully", true, escort);

@@ -3,10 +3,9 @@ using Hotel.Domain.Entities;
 
 namespace Hotel.Domain.Validators
 {
-    public class EscortValidator
+    public class EscortValidator : GenericValidator
     {
         public Escort EscortItem { get; private set; }
-        public bool IsValid { get; private set; }
 
         public EscortValidator(Escort escortItem)
         {
