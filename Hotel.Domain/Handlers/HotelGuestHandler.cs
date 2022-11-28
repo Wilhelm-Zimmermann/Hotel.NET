@@ -3,6 +3,7 @@ using Hotel.Domain.Commands.Contracts;
 using Hotel.Domain.Commands;
 using Hotel.Domain.Entities;
 using Hotel.Domain.Repositories.Contracts;
+using Hotel.Domain.Validators;
 
 namespace Hotel.Domain.Handlers
 {
@@ -26,6 +27,12 @@ namespace Hotel.Domain.Handlers
                 command.Email
             );
 
+            var hotelGuestValidator = new HotelGuestValidator(hotelGuest);
+            hotelGuestValidator.Validate();
+
+            if (!hotelGuestValidator.IsValid)
+                new GenericCommandResult("Some fields might be invalid", false, null);
+
             await _repository.CreateHotelGuest(hotelGuest);
 
             var result = new GenericCommandResult("Created Successfully", true, hotelGuest);
@@ -42,6 +49,12 @@ namespace Hotel.Domain.Handlers
             hotelGuest.UpdateOM(command.Om);
             hotelGuest.UpdateBirthDate(command.BirthDate);
             hotelGuest.UpdateEmail(command.Email);
+
+            var hotelGuestValidator = new HotelGuestValidator(hotelGuest);
+            hotelGuestValidator.Validate();
+
+            if (!hotelGuestValidator.IsValid)
+                new GenericCommandResult("Some fields might be invalid", false, null);
 
             await _repository.UpdateHotelGuest(hotelGuest);
 

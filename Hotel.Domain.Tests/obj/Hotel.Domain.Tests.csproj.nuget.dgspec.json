@@ -4,6 +4,184 @@
     "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Tests\\Hotel.Domain.Tests.csproj": {}
   },
   "projects": {
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj",
+        "projectName": "Hotel.Domain.Api",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj"
+              },
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj",
+        "projectName": "Hotel.Domain.Infra",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Arch.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.15, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Tests\\Hotel.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +190,101 @@
         "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Tests\\Hotel.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
         "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Api\\Hotel.Domain.Api.csproj"
+              },
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj"
+              },
+              "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj",
+        "projectName": "Hotel.Domain",
+        "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj",
+        "packagesPath": "C:\\Users\\wilhe\\.nuget\\packages\\",
+        "outputPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,28 +316,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.1.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.2, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
