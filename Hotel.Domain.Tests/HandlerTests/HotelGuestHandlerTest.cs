@@ -11,7 +11,7 @@ namespace Hotel.Domain.Tests.HandlerTests
     public class HotelGuestHandlerTest
     {
         [Fact]
-        public void ShouldReturnSucessWithObjectCreated()
+        public async Task ShouldReturnTrueWithObjectCreated()
         {
             var fakeHotelGuestRepository = new Mock<IHotelGuestsRepository>();
             fakeHotelGuestRepository.Setup(x => x.CreateHotelGuest(It.IsAny<HotelGuest>()));
@@ -19,9 +19,23 @@ namespace Hotel.Domain.Tests.HandlerTests
 
             var createHotelGuestCommand = new CreateHotelGuestCommand("Jotaro Kujo", "23 Bi", DateTime.UtcNow, "(22) 12865-7856", "jotaro@gmail.com");
 
-            var result = fakeHanlder.Handle(createHotelGuestCommand);
+            var result = (GenericCommandResult) await fakeHanlder.Handle(createHotelGuestCommand);
 
-            Assert.NotNull(result);
+            Assert.True(result.Success);
+        }
+
+        [Fact]
+        public async Task ShouldReturnFalse()
+        {
+            var fakeHotelGuestRepository = new Mock<IHotelGuestsRepository>();
+            fakeHotelGuestRepository.Setup(x => x.CreateHotelGuest(It.IsAny<HotelGuest>()));
+            var fakeHanlder = new HotelGuestHandler(fakeHotelGuestRepository.Object);
+
+            var createHotelGuestCommand = new CreateHotelGuestCommand("", "23 Bi", DateTime.UtcNow, "(22) 12865-7856", "jotaro@gmail.com");
+
+            var result = (GenericCommandResult)await fakeHanlder.Handle(createHotelGuestCommand);
+
+            Assert.False(result.Success);
         }
     }
 }
