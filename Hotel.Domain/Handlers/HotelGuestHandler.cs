@@ -31,7 +31,7 @@ namespace Hotel.Domain.Handlers
             hotelGuestValidator.Validate();
 
             if (!hotelGuestValidator.IsValid)
-                new GenericCommandResult("Some fields might be invalid", false, null);
+                return new GenericCommandResult("Some fields might be invalid", false, null);
 
             await _repository.CreateHotelGuest(hotelGuest);
 
@@ -54,7 +54,7 @@ namespace Hotel.Domain.Handlers
             hotelGuestValidator.Validate();
 
             if (!hotelGuestValidator.IsValid)
-                new GenericCommandResult("Some fields might be invalid", false, null);
+                return new GenericCommandResult("Some fields might be invalid", false, null);
 
             await _repository.UpdateHotelGuest(hotelGuest);
 
