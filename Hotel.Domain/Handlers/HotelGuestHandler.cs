@@ -51,6 +51,7 @@ namespace Hotel.Domain.Handlers
             hotelGuest.UpdateEmail(command.Email);
 
             var hotelGuestValidator = new HotelGuestValidator(hotelGuest);
+
             hotelGuestValidator.Validate();
 
             if (!hotelGuestValidator.IsValid)
