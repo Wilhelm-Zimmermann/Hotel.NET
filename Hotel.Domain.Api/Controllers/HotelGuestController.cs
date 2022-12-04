@@ -29,9 +29,14 @@ namespace Hotel.Domain.Api.Controller
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<HotelGuest> GetHotelGuestById([FromServices] IHotelGuestsRepository repository, Guid id)
+        public async Task<GenericCommandResult> GetHotelGuestById([FromServices] IHotelGuestsRepository repository, Guid id)
         {
-            return await repository.GetHotelGuestById(id);
+            var result = await repository.GetHotelGuestById(id);
+
+            if (result == null)
+                return new GenericCommandResult("HotelGuest not found", false, null);
+
+            return new GenericCommandResult("Find successfull", true, result);
         }
 
 
