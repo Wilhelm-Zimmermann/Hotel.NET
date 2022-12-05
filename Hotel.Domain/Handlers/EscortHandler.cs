@@ -41,8 +41,10 @@ namespace Hotel.Domain.Handlers
         public async Task<ICommandResult> Handle(UpdateEscortCommand command)
         {
             var escort = await _escortRepository.GetEscortById(command.Id);
-            var hotelGuest = await _hotelGuestsRepository.GetHotelGuestById(escort.HotelGuestId);
+            if (escort is null)
+                return new GenericCommandResult("There is no valid escort with this 'id'", false, null);
 
+            var hotelGuest = await _hotelGuestsRepository.GetHotelGuestById(escort.HotelGuestId);
             if (hotelGuest is null)
                 return new GenericCommandResult("There is no HotelGuest with this 'id'", false, null);
 
