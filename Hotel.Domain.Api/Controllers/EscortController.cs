@@ -32,11 +32,14 @@ namespace Hotel.Domain.Api.Controllers
 
         [HttpGet]
         [Route("{hotelGuestId}")]
-        public async Task<IEnumerable<Escort>> GetAllEscortsByHotelGuestsId([FromServices] IEscortsRepository repository, Guid hotelGuestId)
+        public async Task<GenericCommandResult> GetAllEscortsByHotelGuestsId([FromServices] IEscortsRepository repository, Guid hotelGuestId)
         {
             var result = await repository.GetEsortsByHotelGuestId(hotelGuestId);
 
-            return result;
+            if (result is null)
+                return new GenericCommandResult("escort not found", false, null);
+
+            return new GenericCommandResult("Escort Was found", true, result);
         }
 
         [HttpPut]
@@ -54,6 +57,10 @@ namespace Hotel.Domain.Api.Controllers
         public async Task<GenericCommandResult> DeleteEscort([FromServices] IEscortsRepository repository, Guid id)
         {
             var escort = await repository.GetEscortById(id);
+
+            if (escort is null)
+                return new GenericCommandResult("Escort does not exists", false, null);
+
             await repository.DeleteEscort(escort);
 
             return new GenericCommandResult("Successfull Deleted", true, escort);
