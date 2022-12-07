@@ -73,45 +73,5 @@ namespace Hotel.Domain.Tests.HandlerTests
 
             Assert.False(result.Success);
         }
-
-        [Fact]
-        public async Task ShouldReturnAllHotelGuests()
-        {
-            var fakeHotelGuestRepository = new Mock<IHotelGuestsRepository>();
-            var hotelGuest = new HotelGuest("Joseph", "44 BIB", new DateTime(2002, 10, 11), "(11) 91283-1234", "joseph@gmail.com");
-            fakeHotelGuestRepository.Setup(x => x.GetAllHotelGuests()).ReturnsAsync(new List<HotelGuest>{hotelGuest});
-
-            var result = await fakeHotelGuestRepository.Object.GetAllHotelGuests();
-
-            Assert.IsType<List<HotelGuest>>(result);
-        }
-
-        [Fact]
-        public async Task ShouldReturnASpecificHotelGuestById()
-        {
-            var fakeHotelGuestRepository = new Mock<IHotelGuestsRepository>();
-            var hotelGuest = new HotelGuest("Joseph", "44 BIB", new DateTime(2002, 10, 11), "(11) 91283-1234", "joseph@gmail.com");
-            fakeHotelGuestRepository.Setup(x => x.GetHotelGuestById(It.IsAny<Guid>())).ReturnsAsync(hotelGuest);
-
-
-            var result = await fakeHotelGuestRepository.Object.GetHotelGuestById(hotelGuest.Id);
-            
-            Assert.Equal(hotelGuest.Id, result.Id);
-        }
-
-        [Fact]
-        public async Task ShouldBeAbleToDeleteAHotelGuest()
-        {
-            var fakeHotelGuestRepository = new Mock<IHotelGuestsRepository>();
-            var hotelGuest = new HotelGuest("Joseph", "44 BIB", new DateTime(2002, 10, 11), "(11) 91283-1234", "joseph@gmail.com");
-
-            fakeHotelGuestRepository.Setup(x => x.DeleteHotelGuest(It.IsAny<HotelGuest>()));
-            fakeHotelGuestRepository.Setup(x => x.GetHotelGuestById(It.IsAny<Guid>())).ReturnsAsync(hotelGuest);
-
-            var hotelGuestToDelete = await fakeHotelGuestRepository.Object.GetHotelGuestById(hotelGuest.Id);
-            await fakeHotelGuestRepository.Object.DeleteHotelGuest(hotelGuestToDelete);
-
-            Assert.NotNull(hotelGuestToDelete);
-        }
     }
 }
