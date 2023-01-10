@@ -4,6 +4,7 @@ using Hotel.Domain.Entities;
 using Hotel.Domain.Handlers;
 using Hotel.Domain.Repositories;
 using Hotel.Domain.Repositories.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel.Domain.Api.Controller
 {
@@ -14,6 +15,7 @@ namespace Hotel.Domain.Api.Controller
     {
         [HttpPost]
         [Route("create")]
+        [Authorize(Roles = "manager")]
         public async Task<GenericCommandResult> CreateHotelGuest([FromBody] CreateHotelGuestCommand command, [FromServices] HotelGuestHandler handler)
         {
             var handle = (GenericCommandResult) await handler.Handle(command);

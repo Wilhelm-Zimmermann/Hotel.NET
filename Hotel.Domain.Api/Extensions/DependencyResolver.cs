@@ -17,10 +17,18 @@ namespace Hotel.Domain.Api.Extensions
                 options.UseNpgsql(connectionString);
             });
 
+
+            //builder.Services.AddDbContext<DatabaseContext>(x => x.UseInMemoryDatabase("DbMem"));
+
+            // REPOSITORIES
             builder.Services.AddScoped<IHotelGuestsRepository, HotelGuestsRepository>();
             builder.Services.AddScoped<IEscortsRepository, EscortsRepository>();
+            builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+
+            // HANDLERS
             builder.Services.AddScoped<EscortHandler, EscortHandler>();
             builder.Services.AddScoped<HotelGuestHandler, HotelGuestHandler>();
+            builder.Services.AddScoped<UserHandler, UserHandler>();
         }
     }
 }

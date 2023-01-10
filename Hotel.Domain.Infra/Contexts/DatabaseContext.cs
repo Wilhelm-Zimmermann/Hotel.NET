@@ -9,6 +9,7 @@ namespace Hotel.Domain.Infra.Contexts
     {
         public DbSet<HotelGuest> HotelGuests { get; set; }
         public DbSet<Escort> Escorts { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
@@ -36,6 +37,15 @@ namespace Hotel.Domain.Infra.Contexts
                 entity.Property(x => x.BirthDate);
                 entity.Property(x => x.Relationship);
                 entity.HasOne(x => x.HotelGuest).WithMany(x => x.Escorts).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("users");
+                entity.HasKey(x => x.Id);
+                entity.Property(x => x.Name);
+                entity.Property(x => x.Password);
+                entity.Property(x => x.Role);
             });
         }
     }

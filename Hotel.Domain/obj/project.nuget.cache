@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wtsge7NBx+OSbI9GtRI0csUARnDQ7lNgWp2R5JF2tdUwvLklyzRg9LDC6fm87/tMcvz4XLMksNfMrETA9Dlp4g==",
+  "dgSpecHash": "WMhuuF42+FkSwChZjP0Zo4b9kq8fcyD2ey/TWaMqOsVA47PyfIZZZrhE3+V2hBbrQmaXszKPNZ9pQQEBSK9vvQ==",
   "success": true,
   "projectFilePath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\wilhe\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.1\\microsoft.aspnetcore.cryptography.internal.7.0.1.nupkg.sha512",
+    "C:\\Users\\wilhe\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.1\\microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

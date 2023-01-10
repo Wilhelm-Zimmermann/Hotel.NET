@@ -6,7 +6,7 @@ namespace Hotel.Domain.Api.Settings
 {
     public static class AuthorizationSettings
     {
-        public static void Config(this WebApplicationBuilder builder)
+        public static void ConfigAuthorizationSettings(this WebApplicationBuilder builder)
         {
             var key = Encoding.ASCII.GetBytes(TokenSettings.Secret);
 
@@ -17,7 +17,7 @@ namespace Hotel.Domain.Api.Settings
             }).AddJwtBearer(x =>
             {
                 x.RequireHttpsMetadata = false;
-                x.SaveToken = false;
+                x.SaveToken = true;
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
