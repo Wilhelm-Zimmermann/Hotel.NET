@@ -79,6 +79,29 @@ namespace Hotel.Domain.Infra.Migrations
                     b.ToTable("hotel_guests", (string)null);
                 });
 
+            modelBuilder.Entity("Hotel.Domain.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("users", (string)null);
+                });
+
             modelBuilder.Entity("Hotel.Domain.Entities.Escort", b =>
                 {
                     b.HasOne("Hotel.Domain.Entities.HotelGuest", "HotelGuest")
