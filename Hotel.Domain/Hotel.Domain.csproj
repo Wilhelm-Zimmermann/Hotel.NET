@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="7.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Domain.Shared\Hotel.Domain.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

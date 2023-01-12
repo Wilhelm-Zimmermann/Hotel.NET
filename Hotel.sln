@@ -1,23 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Domain", "Hotel.Domain\Hotel.Domain.csproj", "{4C208424-3279-4F8A-AA23-9D22EABA55A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Domain", "Hotel.Domain\Hotel.Domain.csproj", "{4C208424-3279-4F8A-AA23-9D22EABA55A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Domain.Api", "Hotel.Domain.Api\Hotel.Domain.Api.csproj", "{58D76D23-14A8-4109-9F04-33908F7BE261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Domain.Api", "Hotel.Domain.Api\Hotel.Domain.Api.csproj", "{58D76D23-14A8-4109-9F04-33908F7BE261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Domain.Infra", "Hotel.Domain.Infra\Hotel.Domain.Infra.csproj", "{70ED875F-F411-4CCA-84DC-EC269F4E35F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Domain.Infra", "Hotel.Domain.Infra\Hotel.Domain.Infra.csproj", "{70ED875F-F411-4CCA-84DC-EC269F4E35F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Domain.Tests", "Hotel.Domain.Tests\Hotel.Domain.Tests.csproj", "{F109BC6F-864C-4BB4-8C46-0C9529926E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Domain.Tests", "Hotel.Domain.Tests\Hotel.Domain.Tests.csproj", "{F109BC6F-864C-4BB4-8C46-0C9529926E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Domain.Shared", "Hotel.Domain.Shared\Hotel.Domain.Shared.csproj", "{EE323870-76AD-4EA2-98F5-D201010E6E3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4C208424-3279-4F8A-AA23-9D22EABA55A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,15 @@ Global
 		{F109BC6F-864C-4BB4-8C46-0C9529926E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F109BC6F-864C-4BB4-8C46-0C9529926E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F109BC6F-864C-4BB4-8C46-0C9529926E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE323870-76AD-4EA2-98F5-D201010E6E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE323870-76AD-4EA2-98F5-D201010E6E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE323870-76AD-4EA2-98F5-D201010E6E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE323870-76AD-4EA2-98F5-D201010E6E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B17E7996-B547-4EAA-9D54-C8C3A7A5E7D3}
 	EndGlobalSection
 EndGlobal

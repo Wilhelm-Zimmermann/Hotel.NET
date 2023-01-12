@@ -2212,6 +2212,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "compile": {
@@ -2237,6 +2238,16 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.Domain.Infra.dll": {}
+        }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
         }
       }
     }
@@ -6935,12 +6946,18 @@
       "type": "project",
       "path": "../Hotel.Domain.Infra/Hotel.Domain.Infra.csproj",
       "msbuildProject": "../Hotel.Domain.Infra/Hotel.Domain.Infra.csproj"
+    },
+    "Hotel.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj",
+      "msbuildProject": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hotel.Domain >= 1.0.0",
       "Hotel.Domain.Infra >= 1.0.0",
+      "Hotel.Domain.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -6981,6 +6998,9 @@
           "projectReferences": {
             "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj": {
               "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Infra\\Hotel.Domain.Infra.csproj"
+            },
+            "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Shared\\Hotel.Domain.Shared.csproj": {
+              "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Shared\\Hotel.Domain.Shared.csproj"
             },
             "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
               "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"

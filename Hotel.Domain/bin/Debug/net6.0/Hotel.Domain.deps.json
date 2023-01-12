@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Hotel.Domain/1.0.0": {
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "runtime": {
@@ -32,6 +33,11 @@
             "fileVersion": "7.0.122.56809"
           }
         }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "runtime": {
+          "Hotel.Domain.Shared.dll": {}
+        }
       }
     }
   },
@@ -54,6 +60,11 @@
       "sha512": "sha512-rN49CtlMMFgeWmW7F62/TANwxt9sLkQVPTi6RaOJd4t8VwCJYtBvuNoont+04tW97geRjj5qE3sNBybIhypIZQ==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/7.0.1",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512"
+    },
+    "Hotel.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

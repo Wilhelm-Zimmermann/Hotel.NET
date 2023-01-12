@@ -81,3 +81,5 @@ C:\projetos\portfolio\Hotel\Hotel.Domain.Api\obj\Debug\net6.0\staticwebassets\ms
 C:\projetos\portfolio\Hotel\Hotel.Domain.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Hotel.Domain.Api.props
 C:\projetos\portfolio\Hotel\Hotel.Domain.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Hotel.Domain.Api.props
 C:\projetos\portfolio\Hotel\Hotel.Domain.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\projetos\portfolio\Hotel\Hotel.Domain.Api\bin\Debug\net6.0\Hotel.Domain.Shared.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Api\bin\Debug\net6.0\Hotel.Domain.Shared.pdb

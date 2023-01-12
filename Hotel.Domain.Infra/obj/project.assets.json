@@ -2118,6 +2118,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "compile": {
@@ -2125,6 +2126,16 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.Domain.dll": {}
+        }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
         }
       }
     }
@@ -6691,6 +6702,11 @@
       "type": "project",
       "path": "../Hotel.Domain/Hotel.Domain.csproj",
       "msbuildProject": "../Hotel.Domain/Hotel.Domain.csproj"
+    },
+    "Hotel.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj",
+      "msbuildProject": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -10,6 +10,7 @@
         "dependencies": {
           "Hotel.Domain": "1.0.0",
           "Hotel.Domain.Infra": "1.0.0",
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.12",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Swashbuckle.AspNetCore": "6.2.3"
@@ -1268,6 +1269,7 @@
       },
       "Hotel.Domain/1.0.0": {
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "runtime": {
@@ -1285,6 +1287,11 @@
         },
         "runtime": {
           "Hotel.Domain.Infra.dll": {}
+        }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "runtime": {
+          "Hotel.Domain.Shared.dll": {}
         }
       }
     }
@@ -2148,6 +2155,11 @@
       "sha512": ""
     },
     "Hotel.Domain.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

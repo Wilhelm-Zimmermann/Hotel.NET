@@ -2844,6 +2844,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "compile": {
@@ -2859,6 +2860,7 @@
         "dependencies": {
           "Hotel.Domain": "1.0.0",
           "Hotel.Domain.Infra": "1.0.0",
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.12",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -2888,6 +2890,16 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.Domain.Infra.dll": {}
+        }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
         }
       }
     }
@@ -8812,6 +8824,11 @@
       "type": "project",
       "path": "../Hotel.Domain.Infra/Hotel.Domain.Infra.csproj",
       "msbuildProject": "../Hotel.Domain.Infra/Hotel.Domain.Infra.csproj"
+    },
+    "Hotel.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj",
+      "msbuildProject": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
