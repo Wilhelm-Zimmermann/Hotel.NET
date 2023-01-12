@@ -12,13 +12,13 @@ namespace Hotel.Domain.Api.Extensions
         {
             var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase");
 
-            builder.Services.AddDbContext<DatabaseContext>(options =>
-            {
-                options.UseNpgsql(connectionString);
-            });
+            //builder.Services.AddDbContext<DatabaseContext>(options =>
+            //{
+            //    options.UseNpgsql(connectionString);
+            //});
 
 
-            //builder.Services.AddDbContext<DatabaseContext>(x => x.UseInMemoryDatabase("DbMem"));
+            builder.Services.AddDbContext<DatabaseContext>(x => x.UseInMemoryDatabase("DbMem"));
 
             // REPOSITORIES
             builder.Services.AddScoped<IHotelGuestsRepository, HotelGuestsRepository>();

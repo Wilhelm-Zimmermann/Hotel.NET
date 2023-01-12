@@ -3,7 +3,6 @@ using Hotel.Domain.Commands;
 using Hotel.Domain.Entities;
 using Hotel.Domain.Handlers;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace Hotel.Domain.Api.Controllers
 {
@@ -35,14 +34,10 @@ namespace Hotel.Domain.Api.Controllers
                 return new GenericCommandResult("Ok", result.Success, new
                 {
                     Token = token,
-                    UserRole = userRole,
                 });
             }
 
-            return new GenericCommandResult("Ok", result.Success, new
-            {
-                Token = token,
-            });
+            return result;
         }
     }
 }

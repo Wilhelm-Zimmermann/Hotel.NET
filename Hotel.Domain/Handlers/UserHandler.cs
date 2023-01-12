@@ -3,7 +3,7 @@ using Hotel.Domain.Commands.Contracts;
 using Hotel.Domain.Entities;
 using Hotel.Domain.Handlers.Contracts;
 using Hotel.Domain.Repositories.Contracts;
-using Hotel.Domain.Utils;
+using Hotel.Domain.Shared.Utils;
 
 namespace Hotel.Domain.Handlers
 {
@@ -32,7 +32,14 @@ namespace Hotel.Domain.Handlers
 
             if (user == null)
             {
-                return new GenericCommandResult("User not found", false, null);
+                return new GenericCommandResult("User/Password maybe wrong", false, null);
+            }
+
+            var isPasswordMatch = PasswordHash.PasswordMatch(command.Password, user.Password);
+
+            if (!isPasswordMatch)
+            {
+                return new GenericCommandResult("User/Password maybe wrong", false, null);
             }
 
             return new GenericCommandResult("User found", true, user);

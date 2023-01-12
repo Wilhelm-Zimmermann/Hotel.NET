@@ -1262,10 +1262,16 @@
       },
       "Hotel.Domain/1.0.0": {
         "dependencies": {
+          "Hotel.Domain.Shared": "1.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.1"
         },
         "runtime": {
           "Hotel.Domain.dll": {}
+        }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "runtime": {
+          "Hotel.Domain.Shared.dll": {}
         }
       }
     }
@@ -2082,6 +2088,11 @@
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
     "Hotel.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hotel.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

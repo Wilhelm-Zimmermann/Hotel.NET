@@ -15,3 +15,5 @@ C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Inf
 C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\ref\Hotel.Domain.Infra.dll
 C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Infra.runtimeconfig.json
 C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\obj\Debug\net6.0\Hotel.Domain.Infra.genruntimeconfig.cache
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Shared.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain.Infra\bin\Debug\net6.0\Hotel.Domain.Shared.pdb

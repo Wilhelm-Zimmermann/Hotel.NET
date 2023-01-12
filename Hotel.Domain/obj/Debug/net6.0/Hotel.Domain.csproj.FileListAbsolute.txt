@@ -10,3 +10,6 @@ C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.dll
 C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\refint\Hotel.Domain.dll
 C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.pdb
 C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\ref\Hotel.Domain.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain\bin\Debug\net6.0\Hotel.Domain.Shared.dll
+C:\projetos\portfolio\Hotel\Hotel.Domain\bin\Debug\net6.0\Hotel.Domain.Shared.pdb
+C:\projetos\portfolio\Hotel\Hotel.Domain\obj\Debug\net6.0\Hotel.Domain.csproj.CopyComplete

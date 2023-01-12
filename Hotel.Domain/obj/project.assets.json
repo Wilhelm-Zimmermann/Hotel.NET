@@ -30,6 +30,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Hotel.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Domain.Shared.dll": {}
+        }
       }
     }
   },
@@ -71,10 +81,16 @@
         "microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
+    },
+    "Hotel.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj",
+      "msbuildProject": "../Hotel.Domain.Shared/Hotel.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Hotel.Domain.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Cryptography.KeyDerivation >= 7.0.1"
     ]
   },
@@ -110,7 +126,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Shared\\Hotel.Domain.Shared.csproj": {
+              "projectPath": "C:\\projetos\\portfolio\\Hotel\\Hotel.Domain.Shared\\Hotel.Domain.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
