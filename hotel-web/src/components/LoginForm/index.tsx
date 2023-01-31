@@ -23,6 +23,10 @@ export const LoginForm = () => {
         }
 
         const {data} = await api.post<LoginResult>("/users/login", userFormData);
+        
+        if(!data.success)
+            return;
+            
         const {token} = data.data;
         
         login(token);

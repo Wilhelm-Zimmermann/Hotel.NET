@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   Navigate,
+  redirect,
 } from 'react-router-dom';
 import { Z_PARTIAL_FLUSH } from 'zlib';
 import { HotelGuestForm } from './components/HotelGuestForm';
@@ -25,25 +26,29 @@ export const AppRouter: React.FC<Props> = () => {
                     </Routes>
                 </RequireAuth>
             }/>
+            {/* <Route path="" element={<RequireAuth><HotelGuestForm /></RequireAuth>} /> */}
         </Routes>
     </Router>
   );
 }
 
-const PrivateRoute = ({children, ...rest}: any) => {
-    return (
-        <Routes>
-            <Route {...rest}>
-                {isAuthenticated ? children : <Navigate to='/login' />}
-            </Route>
-        </Routes>
-    );
-  };
+// const PrivateRoute = ({children, ...rest}: any) => {
+//     return (
+//         <Routes>
+//             <Route {...rest}>
+//                 {isAuthenticated ? children : <Navigate to='/login' />}
+//             </Route>
+//         </Routes>
+//     );
+//   };
 
 const RequireAuth = ({ children }: any) => {
-  
-    if(!isAuthenticated)
+    
+    console.log(isAuthenticated())
+    if(!isAuthenticated()){
+        // return redirect("/login")
         return <Navigate to="login" />;
+    }
 
     return children;
 }
