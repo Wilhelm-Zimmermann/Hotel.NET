@@ -2,28 +2,34 @@ import { Container } from "react-bootstrap"
 import { api } from "../../services/api";
 import { useState, FormEvent } from "react";
 import { StyledFormGroup, StyledLoginForm } from "./styles";
+import { LoginResult } from "../../utils/GenericResult";
+import { login } from "../../services/auth";
 
 interface LoginFormData{
-    email: string;
+    name: string;
     password: string;
 }
 
 export const LoginForm = () => {
-    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
     const [password, setPassword] = useState("");
 
     const loginForm = async (e: FormEvent) => {
         e.preventDefault();
 
-        const userFormData = {
-            name: email,
+        const userFormData: LoginFormData = {
+            name,
             password
         }
 
-        console.log(userFormData)
-        const {data} = await api.post("/users/create", userFormData);
-
-        console.log(data)
+        const {data} = await api.post<LoginResult>("/users/login", userFormData);
+        
+        if(!data.success)
+            return;
+            
+        const {token} = data.data;
+        
+        login(token);
     }
 
     return(
@@ -31,11 +37,11 @@ export const LoginForm = () => {
             <StyledLoginForm onSubmit={loginForm}>
                 <StyledFormGroup>
                     <label>Email Address</label>
-                    <input type="email" value={email} placeholder="name@example.com" onChange={e => setEmail(e.target.value)}/>
+                    <input type="text" value={name} placeholder="username" onChange={e => setName(e.target.value)}/>
                 </StyledFormGroup>
                 <StyledFormGroup>
                     <label>Password</label>
-                    <input type="email" value={password} placeholder="name@example.com" onChange={e => setPassword(e.target.value)}/>
+                    <input type="text" value={password}  onChange={e => setPassword(e.target.value)}/>
                 </StyledFormGroup>
                 <StyledFormGroup>
                     <button type="submit">Send</button>
